@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>MarkDown&#x57fa;&#x672c;&#x7528;&#x6cd5;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <div align="center">
+<h1 id="markdown基本用法">MarkDown基本用法</h1>
+<h6 id="作者zhengru">作者：ZhengRu</h6>
+</div>
+<h2 id="markdown-用法简介">Markdown 用法简介</h2>
+<p>Markdown 是一种轻量级标记语言，用于快速编写格式化文本。以下是一些常用的语法：</p>
+<h3 id="标题">标题</h3>
+<p>使用 <code>#</code> 表示标题，<code>#</code> 的数量决定标题的级别：</p>
+<pre><code class="language-markdown"><span class="hljs-section"># 一级标题</span>
+<span class="hljs-section">## 二级标题</span>
+<span class="hljs-section">### 三级标题</span>
+</code></pre>
+<h3 id="加粗和斜体">加粗和斜体</h3>
+<ul>
+<li><strong>加粗</strong>：使用 <code>**加粗文本**</code> 或 <code>__加粗文本__</code></li>
+<li><em>斜体</em>：使用 <code>*斜体文本*</code> 或 <code>_斜体文本_</code></li>
+</ul>
+<h3 id="列表">列表</h3>
+<ul>
+<li>无序列表：使用 <code>-</code> 或 <code>*</code> 开头<pre><code class="language-markdown"><span class="hljs-bullet">-</span> 项目 1
+<span class="hljs-bullet">-</span> 项目 2
+</code></pre>
+</li>
+<li>有序列表：使用数字加点<pre><code class="language-markdown"><span class="hljs-bullet">1.</span> 项目 1
+<span class="hljs-bullet">2.</span> 项目 2
+</code></pre>
+</li>
+</ul>
+<h3 id="链接和图片">链接和图片</h3>
+<ul>
+<li>链接：<code>[链接文本](链接地址)</code></li>
+<li>图片：<code>![图片描述](图片地址)</code></li>
+</ul>
+<h3 id="代码块">代码块</h3>
+<ul>
+<li>行内代码：使用反引号包裹，例如 <code>`代码`</code></li>
+<li>多行代码块：使用三个反引号<pre><code class="language-markdown"></code></pre>
+多行代码<pre><code></code></pre>
+</li>
+</ul>
+<h3 id="引用">引用</h3>
+<p>使用 <code>&gt;</code> 表示引用：</p>
+<pre><code class="language-markdown"><span class="hljs-quote">&gt; 这是一个引用</span>
+</code></pre>
+<h3 id="表格">表格</h3>
+<p>使用 <code>|</code> 和 <code>-</code> 创建表格：</p>
+<pre><code class="language-markdown">| 标题1 | 标题2 |
+|-------|-------|
+| 内容1 | 内容2 |
+</code></pre>
+<h3 id="分隔线">分隔线</h3>
+<p>使用 <code>---</code> 或 <code>***</code> 创建分隔线：</p>
+<pre><code class="language-markdown">---
+</code></pre>
+<p>Markdown 简单易学，适合快速编写文档或博客。</p>
+<hr>
+<p>【正如】</p>
+
+            
+            
+        </body>
+        </html>
